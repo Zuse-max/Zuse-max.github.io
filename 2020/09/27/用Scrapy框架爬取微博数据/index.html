@@ -5,13 +5,17 @@
   
 
   
-  <title>左菲的博客</title>
+  <title>用Scrapy框架爬取微博数据 | 左菲的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="左菲的博客">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="[TOC] 一、Scrapy框架目录结构如下： 12345678+--weiboScrapy|     +--spider|      |    +--weibo.py|     +--items.py|     +--middlewares.py|     +--pipelines.py|     +--settings.py+--scrapy.cfg爬取思路：以微博的几个大V为起点，爬取他们的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Scrapy框架爬取微博数据">
+<meta property="og:url" content="http://example.com/2020/09/27/%E7%94%A8Scrapy%E6%A1%86%E6%9E%B6%E7%88%AC%E5%8F%96%E5%BE%AE%E5%8D%9A%E6%95%B0%E6%8D%AE/index.html">
 <meta property="og:site_name" content="左菲的博客">
+<meta property="og:description" content="[TOC] 一、Scrapy框架目录结构如下： 12345678+--weiboScrapy|     +--spider|      |    +--weibo.py|     +--items.py|     +--middlewares.py|     +--pipelines.py|     +--settings.py+--scrapy.cfg爬取思路：以微博的几个大V为起点，爬取他们的">
 <meta property="og:locale">
+<meta property="article:published_time" content="2020-09-27T08:09:26.000Z">
+<meta property="article:modified_time" content="2020-09-27T08:10:45.287Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="左菲的博客" type="application/atom+xml">
@@ -61,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-用Scrapy框架爬取微博数据" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-用Scrapy框架爬取微博数据" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/27/%E7%94%A8Scrapy%E6%A1%86%E6%9E%B6%E7%88%AC%E5%8F%96%E5%BE%AE%E5%8D%9A%E6%95%B0%E6%8D%AE/" class="article-date">
   <time datetime="2020-09-27T08:09:26.000Z" itemprop="datePublished">2020-09-27</time>
@@ -76,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/27/%E7%94%A8Scrapy%E6%A1%86%E6%9E%B6%E7%88%AC%E5%8F%96%E5%BE%AE%E5%8D%9A%E6%95%B0%E6%8D%AE/">用Scrapy框架爬取微博数据</a>
+    <h1 class="article-title" itemprop="name">
+      用Scrapy框架爬取微博数据
     </h1>
   
 
@@ -241,60 +243,19 @@ def process_request(self, request, spider):
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/27/hello-world/" class="article-date">
-  <time datetime="2020-09-27T07:18:10.736Z" itemprop="datePublished">2020-09-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/27/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2020/09/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/27/hello-world/" data-id="ckfktqry20000igu7bwohafzw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
